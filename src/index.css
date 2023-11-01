@@ -1,0 +1,65 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	--theme-toggle-button-background-color: #fff;
+	--theme-toggle-button-box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.8),
+		0 0 3px 1px rgba(255, 255, 255, 0.6);
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Poppins";
+}
+
+html[data-theme="light"] {
+	--color: #000;
+	--background-color: #fff;
+	--theme-toggle-background-color: linear-gradient(
+		to right,
+		#8fd5ff,
+		#a2d4f2,
+		#bfe3fb,
+		#d6ebf9
+	);
+}
+
+html[data-theme="dark"] {
+	--color: #fff;
+	--background-color: #0a0a0a;
+	--theme-toggle-background-color: linear-gradient(
+		to right,
+		#12253e,
+		#1c3b60,
+		#3f6a91
+	);
+}
+
+body {
+	color: var(--color);
+	background-color: var(--background-color);
+}
+
+p,
+a,
+input,
+button {
+	color: var(--color);
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+svg {
+	display: flex;
+}

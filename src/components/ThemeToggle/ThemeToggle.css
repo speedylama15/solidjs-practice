@@ -1,0 +1,25 @@
+.theme-toggle {
+	display: flex;
+	align-items: center;
+	border-radius: 3rem;
+	padding: 0.5rem;
+	background: var(--theme-toggle-background-color);
+	overflow: hidden;
+}
+
+.theme-toggle_button {
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background-color: var(--theme-toggle-button-background-color);
+	box-shadow: var(--theme-toggle-button-box-shadow);
+}
+
+.hidden-theme {
+	visibility: hidden;
+}
+
+.theme-toggle:hover {
+	cursor: pointer;
+}

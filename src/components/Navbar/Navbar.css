@@ -1,0 +1,19 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 8rem;
+	padding: 0 3rem;
+}
+
+.navbar_logo {
+	font-size: 3.2rem;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.navbar_interactives {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
